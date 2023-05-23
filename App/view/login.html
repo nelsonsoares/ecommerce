@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/login.css">
+  <title>Login</title>
+</head>
+
+<body>
+  <div class="container-fluid text-center">
+    <div class="row">
+
+      <div class="col-8 max-height-vh" id="lateral-img">
+        <div class="container">
+          <img src="./img/login.svg" alt="Varias pessoas em frente a uma tela">
+        </div>
+      </div>
+
+      <div class="col-4 max-height-vh flex-column-center">
+        <form action="../controller/controllerLogin.php" method="POST">
+          <div class="container form-width border border-light-subtle rounded p-4 shadow bg-white">
+            <div>
+              <img src="img/user-icon.svg" alt="Ícone de Usuário" class="img-width-100 mt-2">
+            </div>
+            <div class="mb-4">
+              <span class="fs-3 font-weight-500 font-color-dark">Login</span>
+            </div>
+
+            <div class="text-start">
+              <label for="email" class="font-color-dark">E-mail</label>
+              <input type="text" name="email" id="email"
+                class="form-control rounded-pill input-height bg-light ph-light bd-purple focus-purple font-color-dark">
+
+              <label for="senha" class="mt-3" class="font-color-dark">Senha</label>
+              <input type="password" name="senha" id="senha"
+                class="form-control rounded-pill input-height bg-light ph-light bd-purple focus-purple font-color-dark">
+
+            </div>
+            <div class="mt-4">
+              <button type="submit" name="login"
+                class="btn btn-primary max-width input-height rounded-pill flex-row-center btn-purple bd-purple">Login</button>
+            </div>
+            <div class="mt-3">
+              <a href="cadastroClientes.html" class="fs-8 link-puple link-custom-purple">Cadastre-se agora!</a>
+            </div>
+          </div>
+        </form>
+      </div>
+
+    </div>
+    <script src="bootstrap/js/bootstrap.js"></script>
+</body>
+
+</html>

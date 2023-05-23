@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,300&display=swap');
+
+:root {
+  --color-main: #6e00ff;
+  --color-main-min-light: #e0d1ff;
+  --color-main-light: #8f44ff;
+  --color-main-medium: #9d70ff;
+  --color-main-dark: #6100ea;
+  --color-light: #f8f9fa;
+
+  --text-color-light: #c9c9c9;
+  --text-color-dark: #494949;
+
+  --font-main: 'Poppins', sans-serif;
+}
+
+body {
+  font-family: var(--font-main);
+}
+
+/*PARA ALINHAMENTO CENTRALIZADO */
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-row-center {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/* CUSTOMIZAÇÃO DE BACKGROUND */
+.bg-white {
+  background-color: white;
+}
+
+#bg-purple {
+  background-color: var(--color-main);
+}
+
+/* CUSTOMIZAÇÃO DA LARGURA DE IMAGENS */
+.img-width-100 {
+  width: 100px;
+}
+
+.img-width-900 {
+  width: 900px;
+  margin: 0 0 0 100px;
+}
+
+/* CUSTOMIZAÇÃO DO ESTILO DE BOTÕES */
+.btn-purple {
+  background-color: var(--color-main);
+  border: 1px solid var(--color-main);
+}
+
+.btn-purple:hover {
+  background-color: var(--color-main-dark);
+  border: 1px solid var(--color-main-dark);
+}
+
+.focus-purple:focus {
+  background-color: var(--color-main-min-light);
+  border: 1px solid var(--color-main-medium);
+  outline-color: var(--color-main-min-light);
+  box-shadow: 0px 0px 0px 4px var(--color-main-min-light);
+  transition: 0.1s;
+  transition-property: box-shadow;
+}
+
+/* CUSTOMIZAÇÃO DOS LINKS */
+.link-puple {
+  text-decoration: none;
+  color: var(--color-main-dark);
+}
+
+.link-custom-purple:hover {
+  color: var(--color-main-light);
+}
+
+/* CUSTOMIZAÇÃO DO ESTILO DE BORDA */
+.bd-purple {
+  border: 1px solid var(--color-main-light);
+}
+
+/* CUSTOMIZAÇÃO DE LARGURA */
+.max-height-vh {
+  height: 100vh;
+}
+
+.max-width {
+  width: 100%;
+}
+
+.form-width {
+  width: 380px;
+}
+
+#sucess {
+  width: 500px;
+}
+
+/* CUSTOMIZAÇÃO DE ALTURA DO IMPUT*/
+.input-height {
+  height: 45px;
+}
+
+/* CUSTOMIZAÇÃO DA COR DA FONTE */
+.font-color-dark {
+  color: var(--text-color-dark);
+}
+
+/*CUSTOMIZAÇÃO DOS PESOS DA FONTE */
+.font-weight-100 {
+  font-weight: 100;
+}
+
+.font-weight-300 {
+  font-weight: 300;
+}
+
+.font-weight-400 {
+  font-weight: 400;
+}
+
+.font-weight-500 {
+  font-weight: 500;
+}
+
+/*CUSTOMIZAÇÃO DO TAMANHO DA FONTE */
+.fs-8 {
+  font-size: 14px;
+}

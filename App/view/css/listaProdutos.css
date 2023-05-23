@@ -1,0 +1,32 @@
+* {
+  box-sizing: border-box;
+}
+.img-width {
+  width: 16rem;
+}
+
+.f-size {
+  font-size: 11pt;
+}
+
+.max-width-2 {
+  width: 150px;
+}
+
+.border-purple {
+  border: 1px solid var(--color-main-medium);
+}
+
+.m-0 {
+  margin: 0;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.p-custom {
+  padding: 23px 25px 25px 37px;
+}

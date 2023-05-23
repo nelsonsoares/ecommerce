@@ -1,0 +1,21 @@
+.flex-column-start {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+thead {
+  color: var(--color-light);
+  background-color: var(--color-main-light);
+  border-bottom: 2px solid var(--color-main-dark);
+}
+
+
+tbody tr:nth-child(odd) {
+  background-color:var(--color-main-min-light);
+}
+
+.text-purple {
+  color: var(--color-main);
+}

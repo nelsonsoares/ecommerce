@@ -1,0 +1,13 @@
+{
+    "name": "pw2project/nelson",
+    "description": "Projeto do curso técnico em informática IFBA Módulo 3.",
+    "require": {
+        "cocur/slugify": "^4.3"
+    },
+    "authors": [
+        {
+            "name": "Nelson Soares",
+            "email": "nelson.nsf40@gmail.com"
+        }
+    ]
+}
