@@ -47,9 +47,19 @@ if (isset($_GET['id'])) { // verifica se foi enviado o id para exclusão
       </div>
 
       <div class="col-9 flex-wrap p-custom">
-
+        <div style="background-color: #6E00FF;
+        height: 60px; border-radius: 5px; 
+        display: flex; justify-content: space-between; 
+        align-items: center;
+        padding: 0px 20px 0px 20px;
+        margin-bottom: 15px;" class="container-fluid text-light">
+          <i class="bi bi-cart4 fs-2 text-light"></i>
+          <span class="fs-4"> <?php echo "0" ?> </span> <!-- qtde produtos carrinho -->
+        </div>
         <?php // INICIO DA LISTAGEM DOS CLIENTES
+
         $sql = "SELECT * FROM produtos";
+
         $produtos = mysqli_query($connect, $sql);
 
         while ($linhas = mysqli_fetch_array($produtos)) { //INICIO DO WHILE
@@ -66,7 +76,7 @@ if (isset($_GET['id'])) { // verifica se foi enviado o id para exclusão
               <p class="fs-5 fw-bold font-color-dark m-0"><?php echo 'R$ ' . $linhas['valor']; //Valor 
                                                           ?></p>
               <div class="mt-2 flex-row-center font-color-dark">
-                <button type="submit" class="btn btn-primary max-width-2 input-height rounded-pill flex-row-center btn-purple bd-purple mb-3" name="cadastrarProduto">Add Carinho</button>
+                <a href="listarProdutos.php?item=<?php echo $linhas['id']; ?>" class="btn btn-primary max-width-2 input-height rounded-pill flex-row-center btn-purple bd-purple mb-3" name="addCarrinho">Add Carrinho</a>
               </div>
               <div>
                 <a href="listarProdutos.php?id=<?php echo $linhas['id']; ?>"><i class="bi bi-trash text-purple fs-5"></i></a>
@@ -75,7 +85,7 @@ if (isset($_GET['id'])) { // verifica se foi enviado o id para exclusão
             </div>
           </div>
 
-        <?php } //FIM DO WHILE E DA LISTAGEM DE CLIENTES
+        <?php } //FIM DO WHILE E DA LISTAGEM DE CLIENTE
         mysqli_close($connect)
         ?>
       </div>
